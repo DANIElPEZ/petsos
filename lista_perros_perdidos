@@ -1,7 +1,0 @@
-**HU-11 — Consultar perros perdidos**
-***
-- **Éxito:** la lista muestra las alertas activas con fotografía, nombre, última ubicación conocida y recompensa.
-
-- **Error:** si falla la consulta, aparece un mensaje y una opción para reintentar.
-
-- **Celular:** si no existen alertas, se muestra un mensaje como «No hay perros perdidos publicados por ahora»; la pantalla no queda en blanco.
