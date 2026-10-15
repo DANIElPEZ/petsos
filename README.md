@@ -42,7 +42,9 @@ Este objetivo permite verificar al final del sprint si se cumplió, sin exigir q
 
 ***
 **Poner números a la calidad**
+
 Los requisitos de calidad deben ser medibles, no simplemente decir que PetsOS será rápida, segura o fácil de usar.
+
 | ID | Requisito | Método de verificación |
 |---|---|---|
 | RC-01 | La lista debe cargar en un máximo de 2 segundos bajo condiciones de prueba definidas. | Medir el tiempo de carga con 200 solicitudes y conexión estable. |
