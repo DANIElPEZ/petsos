@@ -1,4 +1,5 @@
 **PERSONA PRINCIPAL** 
+
 ***
 Daniel Pineda, tiene un perro al que considera parte de su familia y utiliza su celular para comunicarse y buscar información.
 ***
