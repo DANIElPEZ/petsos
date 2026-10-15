@@ -40,8 +40,8 @@ Este objetivo permite verificar al final del sprint si se cumplió, sin exigir q
 | Porcentaje del MVP | Pendiente de calcular |
 | Límite propuesto por la guía
 
-
-Poner números a la calidad
+***
+**Poner números a la calidad**
 Los requisitos de calidad deben ser medibles, no simplemente decir que PetsOS será rápida, segura o fácil de usar.
 | ID | Requisito | Método de verificación |
 |---|---|---|
@@ -50,7 +50,7 @@ Los requisitos de calidad deben ser medibles, no simplemente decir que PetsOS se
 | RC-03 | Los formularios deben identificar los campos obligatorios incompletos. | Probar formularios vacíos y datos incompletos. |
 | RC-04 | La lista debe contemplar estados de carga, vacío, error y datos. | Ejecutar pruebas para los cuatro estados. |
 | RC-05 | Las pruebas automatizadas deben finalizar sin fallos antes de entregar el sprint. | Ejecutar `flutter test`. |
-
+***
 
 | Heurística | Aplicación en PetsOS |
 |---|---|
