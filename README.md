@@ -20,4 +20,22 @@ Este objetivo permite verificar al final del sprint si se cumplió, sin exigir q
 | Ejecutar pruebas y revisar código | Equipo de desarrollo | Pruebas y Pull Request | Pendiente |
 | Realizar demostración y retrospectiva | Equipo de desarrollo | `docs/sprints/sprint-1.md` | Pendiente |
 ***
-
+**MVP - Mapa de Historia**
+| Etapa | Funcionalidades incluidas | Prioridad |
+|---|---|---|
+| Acceso | Registro, login y selección de rol | Alta |
+| Mascotas | Registrar y consultar perros | Alta |
+| Emergencias | Botón SOS y creación de solicitudes | Alta |
+| Perros perdidos | Publicar, listar y consultar alertas | Alta |
+| Recuperación | Reportar encontrado y contactar al propietario | Alta |
+| Atención médica | Crear solicitud, consultar y aceptar | Alta |
+| Comunicación | Chat entre los participantes de una solicitud | Alta |
+| Funciones futuras | GPS en tiempo real, pagos y agenda de citas | Fuera del MVP |
+***
+**Calculo porcentaje**
+| Concepto | Valor |
+|---|---:|
+| Puntos de las historias incluidas en el MVP | Pendiente |
+| Puntos totales del backlog | 79 SP (estimación inicial) |
+| Porcentaje del MVP | Pendiente de calcular |
+| Límite propuesto por la guía | 60 % |
