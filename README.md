@@ -71,10 +71,13 @@ Los requisitos de calidad deben ser medibles, no simplemente decir que PetsOS se
 | Ayuda y documentación | Explicar cómo publicar alertas y contactar al propietario. |
 
 **Ficha de entrevista 1 — Jose Torres**
-***
+
 Fecha:	15/10/2026
+
 Entrevistado: Jose Torres
+
 Perfil:	Dueño de un perro
+
 ***
 PETSOS-01 — Validar reporte de perros perdidos
 **Preguntas y respuestas**
@@ -129,7 +132,9 @@ El entrevistado considera útil contar con una herramienta para reportar perros 
 **Ficha de entrevista 2 — Juan Kaimen**
 
 Fecha:	15/10/2026
+
 Entrevistado:	Juan Kaimen
+
 Perfil:	Persona que convive con un perro
 ***
 PETSOS-02 — Validar solicitud de ayuda por enfermedad
