@@ -38,4 +38,29 @@ Este objetivo permite verificar al final del sprint si se cumplió, sin exigir q
 | Puntos de las historias incluidas en el MVP | Pendiente |
 | Puntos totales del backlog | 79 SP (estimación inicial) |
 | Porcentaje del MVP | Pendiente de calcular |
-| Límite propuesto por la guía | 60 % |
+| Límite propuesto por la guía
+
+
+Poner números a la calidad
+Los requisitos de calidad deben ser medibles, no simplemente decir que PetsOS será rápida, segura o fácil de usar.
+| ID | Requisito | Método de verificación |
+|---|---|---|
+| RC-01 | La lista debe cargar en un máximo de 2 segundos bajo condiciones de prueba definidas. | Medir el tiempo de carga con 200 solicitudes y conexión estable. |
+| RC-02 | No debe existir desplazamiento horizontal involuntario en pantallas de 360 dp. | Probar la lista y el detalle en un dispositivo o emulador. |
+| RC-03 | Los formularios deben identificar los campos obligatorios incompletos. | Probar formularios vacíos y datos incompletos. |
+| RC-04 | La lista debe contemplar estados de carga, vacío, error y datos. | Ejecutar pruebas para los cuatro estados. |
+| RC-05 | Las pruebas automatizadas deben finalizar sin fallos antes de entregar el sprint. | Ejecutar `flutter test`. |
+
+
+| Heurística | Aplicación en PetsOS |
+|---|---|
+| Visibilidad del estado | Mostrar si una solicitud está cargando, publicada o falló. |
+| Correspondencia con el mundo real | Utilizar términos como «Perro perdido» y «Perro enfermo». |
+| Control y libertad | Permitir regresar sin publicar accidentalmente. |
+| Consistencia | Mantener los mismos estilos y componentes. |
+| Prevención de errores | Validar campos obligatorios y recompensa. |
+| Reconocimiento antes que recuerdo | Mostrar fotografías y datos del perro seleccionado. |
+| Flexibilidad y eficiencia | Facilitar la consulta de alertas. |
+| Diseño minimalista | Priorizar la información importante de la emergencia. |
+| Recuperación de errores | Ofrecer una opción para reintentar. |
+| Ayuda y documentación | Explicar cómo publicar alertas y contactar al propietario. |
