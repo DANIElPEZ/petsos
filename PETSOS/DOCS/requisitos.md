@@ -1,7 +1,7 @@
 **PERSONA PRINCIPAL** 
 
 ***
-Daniel Pineda, tiene un perro al que considera parte de su familia y utiliza su celular para comunicarse y buscar información.
+Daniel Pineda, tiene 22 años, tiene un perro al que considera parte de su familia y muchas veces no puede prestarle atención en situaciones de enfermedad, etc por ocupaciones, utiliza su celular para comunicarse y buscar información.
 ***
 **Objetivo:** actuar rápidamente si su perro se pierde o se enferma.
 **Necesidades:** publicar una alerta, compartir fotografías, encontrar ayuda y comunicarse con otras personas.
