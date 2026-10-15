@@ -1,8 +1,0 @@
-HU-17 — Reportar perro enfermo
-
-- *Éxito*: el propietario selecciona un perro, describe lo que ocurre y crea una solicitud de tipo medical.
-
-- *Error*: si falta la descripción, la aplicación informa qué debe completar.
-
-- *Celular*: si la conexión falla al enviar, se informa que la solicitud no pudo confirmarse y se ofrece reintentar.
-Cada historia prioritaria debe tener ejemplos equivalentes de éxito, error y una condición propia del dispositivo. Otra persona del equipo debe revisar los criterios antes de darlos por aprobados.
