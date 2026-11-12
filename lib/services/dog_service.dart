@@ -17,6 +17,7 @@ class DogService {
 
   Future<void> createDog({
     required String name,
+    String petType = 'Perro',
     String? breed,
     String? sex,
     int? age,
@@ -27,6 +28,7 @@ class DogService {
     await db.from('dogs').insert({
       'owner_id': db.auth.currentUser!.id,
       'name': name.trim(),
+      'pet_type': petType,
       'breed': breed?.trim(),
       'sex': sex?.trim(),
       'age': age,
@@ -39,6 +41,7 @@ class DogService {
   Future<void> updateDog({
     required String id,
     required String name,
+    String petType = 'Perro',
     String? breed,
     String? sex,
     int? age,
@@ -48,6 +51,7 @@ class DogService {
   }) async {
     await db.from('dogs').update({
       'name': name.trim(),
+      'pet_type': petType,
       'breed': breed?.trim(),
       'sex': sex?.trim(),
       'age': age,

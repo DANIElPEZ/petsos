@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'core/supabase_config.dart';
-import 'screens/auth/login_screen.dart';
 import 'screens/home/home_screen.dart';
+import 'services/offline_sos_service.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -12,6 +12,9 @@ Future<void> main() async {
     url: SupabaseConfig.url,
     anonKey: SupabaseConfig.anonKey,
   );
+
+  // La cola se sincroniza al iniciar y cada vez que el dispositivo recupera red.
+  await OfflineSosService.instance.initialize();
 
   runApp(const PetsOSApp());
 }
@@ -37,17 +40,9 @@ class PetsOSApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const AuthGate(),
+      // El usuario puede explorar como invitado; autenticación se solicita
+      // únicamente al intentar usar funciones que guardan información personal.
+      home: const HomeScreen(),
     );
-  }
-}
-
-class AuthGate extends StatelessWidget {
-  const AuthGate({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final session = Supabase.instance.client.auth.currentSession;
-    return session == null ? const LoginScreen() : const HomeScreen();
   }
 }

@@ -19,7 +19,7 @@ class DogCard extends StatelessWidget {
           child: dog.mainImage.isEmpty ? const Icon(Icons.pets) : null,
         ),
         title: Text(dog.name, style: const TextStyle(fontWeight: FontWeight.bold)),
-        subtitle: Text(dog.breed ?? 'Raza no registrada'),
+        subtitle: Text('${dog.petType} · ${dog.breed ?? 'Raza/variedad no registrada'}'),
         trailing: const Icon(Icons.chevron_right),
         onTap: onTap,
       ),

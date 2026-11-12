@@ -2,6 +2,7 @@ class Dog {
   final String id;
   final String ownerId;
   final String name;
+  final String petType;
   final String? breed;
   final String? sex;
   final int? age;
@@ -13,6 +14,7 @@ class Dog {
     required this.id,
     required this.ownerId,
     required this.name,
+    this.petType = 'Perro',
     this.breed,
     this.sex,
     this.age,
@@ -28,6 +30,7 @@ class Dog {
       id: map['id'] as String,
       ownerId: map['owner_id'] as String,
       name: map['name'] as String? ?? '',
+      petType: map['pet_type'] as String? ?? 'Perro',
       breed: map['breed'] as String?,
       sex: map['sex'] as String?,
       age: map['age'] as int?,

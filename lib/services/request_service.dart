@@ -74,12 +74,14 @@ class RequestService {
   Future<void> completeRequest(String requestId) async {
     await db.from('requests').update({
       'status': 'completed',
+      'completed_at': DateTime.now().toUtc().toIso8601String(),
     }).eq('id', requestId);
   }
 
   Future<void> markLostAsFound(String requestId, {String? finderId}) async {
     await db.from('requests').update({
       'status': 'found',
+      'completed_at': DateTime.now().toUtc().toIso8601String(),
       if (finderId != null) 'finder_id': finderId,
     }).eq('id', requestId);
   }
@@ -88,5 +90,22 @@ class RequestService {
     await db.from('requests').update({
       'finder_id': db.auth.currentUser!.id,
     }).eq('id', requestId);
+  }
+
+  Future<void> submitFeedback({
+    required String requestId,
+    required String serviceType,
+    required int rating,
+    String? comment,
+  }) async {
+    final userId = db.auth.currentUser?.id;
+    if (userId == null) throw Exception('Debes iniciar sesión para enviar tu opinión.');
+    await db.from('service_feedback').insert({
+      'request_id': requestId,
+      'user_id': userId,
+      'service_type': serviceType,
+      'rating': rating,
+      'comment': comment?.trim().isEmpty == true ? null : comment?.trim(),
+    });
   }
 }
